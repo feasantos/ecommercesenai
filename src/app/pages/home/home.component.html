@@ -1,0 +1,55 @@
+<div class="banner">
+  <div class="content">
+    <h1 class="mb-5">
+      A melhor loja de Games! <br />
+      Monte seu setup conosco!
+    </h1>
+    <a routerLink="menu">Peça Já<i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+<!-- inicio  -->
+<div class="container mt-5 mb-5">
+  <h1 class="text-center">
+    Quer montar seu setup <span class="highlight">nós te ajudamos</span>
+  </h1>
+  <div class="row mt-5">
+    <!-- primeiro  -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>PC Gamer</h1>
+        <p>Placas e Processador</p>
+      </div>
+    </div>
+    <!-- segundo -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>Video Game</h1>
+        <p>Consoles e jogos</p>
+      </div>
+    </div>
+    <!-- terceiro  -->
+    <div class="col-lg-4 mt-2">
+      <div class="stepBox">
+        <h1>Acessórios</h1>
+        <p>Mouse - Cadeiras - Headsets</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- foodbox  -->
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Setups <span class="highlight">favoritos</span></h1>
+  <div class="row">
+    <div class="col-lg-3 mt-3" *ngFor="let fd of foodData; index as i">
+      <div class="foodbox" *ngIf="i <= 3">
+        <img src="{{ fd.foodImg }}" />
+        <h1>{{ fd.foodName }}</h1>
+        <p>{{ fd.foodPrice | currency: "BRL" }}</p>
+      </div>
+    </div>
+  </div>
+  <a routerLink="menu" class="viewmorebtn"
+    >Veja Mais <i class="bi bi-arrow-right"></i
+  ></a>
+</div>
