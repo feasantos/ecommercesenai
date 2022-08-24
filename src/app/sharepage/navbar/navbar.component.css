@@ -1,6 +1,10 @@
 .navbar-light .navbar-nav .nav-link
 {
     color: var(--secondary-color);
+    font-family: fantasy;
+    font-size: x-large;
+
+
 }
 .navbar-light .navbar-nav .nav-link.active-link
 {
